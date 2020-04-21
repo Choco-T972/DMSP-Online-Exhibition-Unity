@@ -397,7 +397,7 @@ Transform:
   m_GameObject: {fileID: 237779174}
   m_LocalRotation: {x: -0, y: -0, z: -0.2402736, w: 0.9707053}
   m_LocalPosition: {x: -4.586, y: -1.729, z: 228.42369}
-  m_LocalScale: {x: 0.0943193, y: 1.1142, z: 1}
+  m_LocalScale: {x: 0.0943193, y: 0.8651206, z: 1}
   m_Children: []
   m_Father: {fileID: 782078463}
   m_RootOrder: 11
@@ -708,10 +708,10 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: fdfe8abea577a9943a5603009f915701, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1010,8 +1010,8 @@ GameObject:
   - component: {fileID: 476095082}
   - component: {fileID: 476095080}
   - component: {fileID: 476095081}
-  m_Layer: 8
-  m_Name: Jeff
+  m_Layer: 0
+  m_Name: Act01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1308,7 +1308,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 5.4
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1354,7 +1354,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &562245491
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1414,7 +1414,7 @@ Transform:
   m_GameObject: {fileID: 562245489}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5124, y: 1.5124, z: 1.5124}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -1919,7 +1919,7 @@ GameObject:
   - component: {fileID: 849795538}
   - component: {fileID: 849795537}
   - component: {fileID: 849795536}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Shawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2431,10 +2431,10 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: fdfe8abea577a9943a5603009f915701, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -2705,10 +2705,10 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: fdfe8abea577a9943a5603009f915701, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -3016,7 +3016,7 @@ GameObject:
   - component: {fileID: 1084581876}
   - component: {fileID: 1084581875}
   - component: {fileID: 1084581874}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Tom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3451,10 +3451,10 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: fdfe8abea577a9943a5603009f915701, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -3619,7 +3619,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1278968734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4193,6 +4193,50 @@ PolygonCollider2D:
       - {x: 0.009410735, y: -0.12648916}
       - {x: 0.011372566, y: 0.19088507}
       - {x: 0.5400977, y: 0.6462183}
+--- !u!1 &1547501491
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1547501492}
+  - component: {fileID: 1547501493}
+  m_Layer: 0
+  m_Name: Audio_Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1547501492
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547501491}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1689172449}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1547501493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547501491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15a12f8c84b95194c8689c9d2c53d6e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  filePath: 
 --- !u!1 &1550009884
 GameObject:
   m_ObjectHideFlags: 0
@@ -4630,7 +4674,7 @@ GameObject:
   - component: {fileID: 1663333680}
   - component: {fileID: 1663333679}
   - component: {fileID: 1663333678}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Blake
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4759,6 +4803,7 @@ Transform:
   m_Children:
   - {fileID: 2131189247}
   - {fileID: 1403213267}
+  - {fileID: 1547501492}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -26,7 +26,7 @@ public class LoadFile : MonoBehaviour
         url = urlString;
         using (UnityWebRequest www = UnityWebRequestMultimedia.GetAudioClip(url, AudioType.WAV))
         {
-            
+            Debug.Log("load");
             ((DownloadHandlerAudioClip)www.downloadHandler).streamAudio = true;
             yield return www.SendWebRequest();//比较耗时间
             Debug.Log("send");
@@ -50,5 +50,6 @@ public class LoadFile : MonoBehaviour
     {
         //for start button
         StartCoroutine(LoadURL());
+        Debug.Log("start");
     }
 }

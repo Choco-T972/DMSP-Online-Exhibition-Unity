@@ -43,20 +43,20 @@ public class AudioController : MonoBehaviour
         if (request.isNetworkError || request.isHttpError)
         {
             Debug.Log(request.error);
-            audiosJson = File.ReadAllText(Application.dataPath + "/audios.json");
+            audiosJson = File.ReadAllText(Application.dataPath + "/audios1.json");
         }
         else
         {
             AudiosList = JsonUtility.FromJson<AudiosList>(request.downloadHandler.text);
         }
         Debug.Log("audioDone");
-        LoadAudio("Joe", 101);
+        //LoadAudio("Joe", 101);
 
     }
 
     //void getDataByFile()
     //{
-    //    audiosJson = File.ReadAllText(Application.dataPath + "/audios.json");
+    //    audiosJson = File.ReadAllText(Application.dataPath + "/audios01.json");
     //    AudiosList = JsonUtility.FromJson<AudiosList>(audiosJson);
     //    Debug.Log("audioDone");
     //}
@@ -79,31 +79,36 @@ public class AudioController : MonoBehaviour
         {
             if (character == audios.name)
             {
-                // Get answer
+                // Get audio name
                 foreach (AudiosActs acts in audios.acts)
                 {
 
                     if (toId == acts.id)
                     {
                         audioName = acts.audioName;
-                        Debug.Log(audioName);
                         to = acts.to;
-                        
+                        Debug.Log(to);
                     }
                 }
             }
         }
 
         string soundPath = filePath + character + "/";
-        Debug.Log(soundPath);
 
-        WWW request = GetAudioFromFile(soundPath, audioName);
+        WWW request = GetAudioFromFile(soundPath, "00-A.ogg");//找到文件名有问题
 
         audioClip = request.GetAudioClip();
         audioSource.clip = audioClip;
         audioSource.clip.name = audioName;
 
         PlayAudio();
+        StartCoroutine(nextAudio(audioClip.length));
+    }
+
+    IEnumerator nextAudio(float time)
+    {
+        yield return new WaitForSeconds(time);
+        Debug.Log("next");
     }
 
     public void PlayAudio()
