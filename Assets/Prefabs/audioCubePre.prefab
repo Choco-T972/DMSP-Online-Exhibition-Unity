@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9040303171709197023}
   - component: {fileID: 3674845485402084428}
   m_Layer: 0
-  m_Name: sampleCubePre
+  m_Name: audioCubePre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -992,7 +992,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5fbc7ae2889f524e84c6d7d9f657a67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameCardPre: {fileID: 8886025148645834201, guid: 127ad6596f618a745835a3c17f1d4d81,
+  nameCardPre: {fileID: 8886025148645834201, guid: 15b9fb96779b5f74d9f91764fd9c612f,
     type: 3}
   images:
   - {fileID: 21300000, guid: 65e18fe602ac32249bef75da7c005677, type: 3}
@@ -2820,7 +2820,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64dcc44f025d45c4caf3971ed94bf45a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sampleCubePre: {fileID: 5192833036940139818, guid: 9860e5836d5f2b8419b6bf9ba9535a2f,
+  _sampleCubePre: {fileID: 5192833036940139818, guid: 2b08fe82b1df3314a9b8b976b43fbf84,
     type: 3}
   distance: 0.04
 --- !u!114 &1020816473
